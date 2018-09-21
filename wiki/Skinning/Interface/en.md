@@ -799,6 +799,9 @@ Notes:
 - If animation is used:
   - animation does not loop, but the last frame persists until it fades out.
   - single frame behaviour is not used.
+- Positioning Varies
+  - in v1 keeps idle
+  - in v1+ it falls
 
 ---
 
@@ -2134,7 +2137,23 @@ Notes:
   - scoreboards on the left while playing
   - button that shows the selected beatmap while waiting in a room in multiplayer
 - Tinting varies by button state.
-
+  - song selection screen
+    - White: selected beatmap
+    - Light Blue: other beatmap difficulties
+    - Orange: submitted online score beatmap
+    - Pink: no online score beatmap
+    - Blue: beatmap group
+    - Lime: selected beatmap group
+  - multiplayer lobby screen
+    - Pink: selected beatmap
+    - Orange: hovering above selected beatmap and non available beatmap
+    - Lime: hovering above while beatmap is not available
+  - in-game scoreboards
+    - Cyan: other players score on beatmap scoreboard
+    - White: user score
+    - Orange: user submitted best score
+    - Blue: indicates good HP status, it gradually fades to Red if lose HP (multiplayer only)
+    - Red: indicates critical HP status, it gradually fades to Blue if recover HP (multiplayer only)
 ---
 
 `selection-mode.png`
